@@ -1,5 +1,5 @@
 # Stanford
-Scripts for photovoltaics research and opto-electronic characterization writen with McGehee Group
+Scripts for photovoltaics research and opto-electronic characterization written with McGehee Group
 
 1. Data Extraction: This folder contains several matlab scripts that read in all of the data files in a selected folder of the same data type, extracts the data and combines the data into a single csv or excel file. Run the script in matlab and a user interface dialog box will allow you to select a file in the folder to do the extractino from.Supported data types include:
   - Generic text data file extraction from files with headers [Extract.m, ExtractInterpolate.m allows user to specify a common set of independent variable values to interpolate the data from all of the files to] 
@@ -9,4 +9,4 @@ Scripts for photovoltaics research and opto-electronic characterization writen w
 
 1. TransferMatrix_Matlab and TransferMatrix_Python: Performs 1-D optical simulations of stacks of thin films using the transfer matrix method to account for optical interference from the reflected waves at each interface. See TransferMatrix_Matlab/README_TransferMatrix.pdf for more documentation.
 
-1. Spectral_Missmatch_Factor: Calculates spectral mismatch factor for a solar cell. User needs to comment out the appropriate lines in script to select what solar simulator and which calibration photodiodes were used to set the solar simulator intensity. After running the script the program will prompt the user to select the file containing the solar cell EQE data.
+1. Spectral_Missmatch_Factor: Calculates spectral mismatch factor for a solar cell. User needs to comment out the appropriate lines in script to select what solar simulator and which calibration photodiodes were used to set the solar simulator intensity that are stored in the file Mismatch_spectra.xls. After running the script the program will prompt the user to select the file containing the solar cell EQE data.

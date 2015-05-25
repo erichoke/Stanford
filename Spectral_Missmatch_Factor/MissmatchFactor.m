@@ -14,7 +14,7 @@
 % wavelength range of the file.
 
 % Eric Hoke April 10, 2009
-% Revised ETH Jan 21, 2014
+% Revised ETH Jan 21, 2015
 
 function M= MissmatchFactor
 % PROMPT FOR Organic device EQE DATA and Read in Data
@@ -32,11 +32,10 @@ diodeEQE=xlsread('Mismatch_spectra.xls','KG5 Photodiode EQE');
 % Ideal spectra we are trying to simulate device performance under
 % converted to photocurrent flux, in units of mA/cm2-nm
 AM15=xlsread('Mismatch_spectra.xls','AM 1.5G flux');
-%AM15=xlsread('Mismatch_spectra.xls','AM 1.5G flux');
 
 % Actual Spectrum of Lamp- needs to be proportional to photon flux
-% SolarSim=xlsread('Mismatch_spectra.xls','McGehee Solar simulator spec');
-SolarSim=xlsread('Mismatch_spectra.xls','Shriram Solar Simulator');
+SolarSim=xlsread('Mismatch_spectra.xls','McGehee Solar simulator spec');
+%SolarSim=xlsread('Mismatch_spectra.xls','Shriram Solar Simulator');
 
 % Interpolate spectra, assume data is zero beyond where data is available
 lambda = 300:1300; %lambda values to interpolate to for computing integral
